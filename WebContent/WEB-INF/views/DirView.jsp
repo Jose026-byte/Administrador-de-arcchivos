@@ -2,14 +2,16 @@
 <html>
 <head>
 	<%-- 2(a). Importa los CSS y JS de Twitter Bootstrap --%>
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<title>Directorios de ${path}</title>
 </head>
 <body>
 	<div class="container">
 		<h2>Administrador de Archivos</h2>
 		<%-- 
-			 6(a)Si el tamaño de la variable path
+			 6(a)Si el tamaÃ±o de la variable path
 			 es menor que uno, 
 			 no se encontraron elementos 
 		--%>
@@ -17,19 +19,19 @@
 			<br>
 			<div class="alert alert-info">
 			No se encontraron elementos en la
-				búsqueda</div>
+				bÃºsqueda</div>
 		</c:if>
-		<%-- Si el tamaño es mayor a 0, hay al menos un elemento --%>
+		<%-- Si el tamaÃ±o es mayor a 0, hay al menos un elemento --%>
 		<c:if test="${fn:length(requestScope.paths) gt 0}">
 			<p>Listando contenidos de <b>${path }</b> con
 			   <b>${fn:length(requestScope.paths)}</b> elementos.</p>
 			   
-			 <%-- Inicia la creación de la tabla --%>
+			 <%-- Inicia la creaciÃ³n de la tabla --%>
 			<table class="table table-striped">
 				<tr>
 					<th>Nombre</th>
 					<th>Path</th>
-					<th>Tamaño (B)</th>
+					<th>TamaÃ±o (B)</th>
 				</tr>
 				<%--
 					6(b)Se obtiene cada uno de los atributos
@@ -40,7 +42,7 @@
 					<tr>
 						<td><a href="Download.do?archivo=${element}"><%--nombre de archivo --%></a></td>
 						<td><%--path --%></td>
-						<td><%--tamaño --%>/td>
+						<td><%--tamaÃ±o --%>/td>
 
 					</tr>
 				</c:forEach>
