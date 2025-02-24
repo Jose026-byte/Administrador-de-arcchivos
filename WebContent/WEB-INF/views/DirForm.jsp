@@ -2,7 +2,10 @@
 <html>
 <head>
 	<%-- 2(a). Importa los CSS y JS de Twitter Bootstrap --%>
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 	<title>Administrador de Archivos</title>
 </head>
 <body>
@@ -17,7 +20,7 @@
 				<div class="form-group">
 					<label for="path" class="control-label">Path</label>
 					<%--
-						5(a) Validación con Bootstrap 
+						5(a) ValidaciÃ³n con Bootstrap 
 						para hacerlo requerido 
 					--%>
 					<input type="text" name="path" id="path" 
@@ -26,11 +29,11 @@
 				 </div>
 				 <div class="form-group">
 				 	<%--
-				 	    5(b) Crear un botón de tipo submit 
+				 	    5(b) Crear un botÃ³n de tipo submit 
 				 	    con Bootstrap que tenga el texto "Listar"
-				 		y el ícono glyphicon-search
+				 		y el Ã­cono glyphicon-search
 				 	--%>
-				 	<%-- Escribe tu código aquí --%>
+				 	<%-- Escribe tu cÃ³digo aquÃ­ --%>
 				 </div>
 				<%-- Muestra los errores encapsulados
 					 como atributos en request. --%>
